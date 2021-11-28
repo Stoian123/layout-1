@@ -1,0 +1,50 @@
+.header {
+  background-color: #2C3E50;
+}
+
+.header__inner {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 44px;
+  width: 140px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo-text {
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #27AE60;
+}
+
+.header__menu-list {
+  display: flex;
+}
+
+.header__menu-item + *{
+  margin-left: 40px;
+}
+
+.header__menu-link {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 540px) {
+  .header__logo {
+    width: 100px;
+  }
+  .header__logo-text {
+    font-size: 18px;
+  }
+  .header__menu-list {
+    display: none;
+  }
+}
